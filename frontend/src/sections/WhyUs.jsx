@@ -53,7 +53,7 @@ const WhyUs = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="glass p-2 rounded-3xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+            <div className="glass p-2 rounded-3xl transform rotate-2 hover:rotate-0 hover-glow transition-all duration-500">
               <div className="bg-[var(--card-bg)] backdrop-blur-xl rounded-2xl overflow-hidden shadow-inner border border-[var(--border-color)]">
                 {/* Mock Code Editor */}
                 <div className="h-8 bg-gray-800 dark:bg-gray-900 flex items-center px-4 gap-2 border-b border-gray-700">
