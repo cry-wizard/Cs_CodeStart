@@ -6,51 +6,48 @@ const Courses = () => {
   const [selectedCourse, setSelectedCourse] = useState(null);
   const courses = [
     {
-      title: "Foundations of Code",
-      level: "Beginner",
-      duration: "8 Weeks",
+      title: "Foundation Tech Bootcamp",
+      level: "Middle School",
+      duration: "2 Days",
       icon: <FiTerminal size={40} />,
-      desc: "Perfect for beginners. Learn the absolute basics of programming logic, variables, loops, and simple algorithms.",
+      desc: "Perfect for beginners. Introduce your students to programming logic, block-based coding, and the absolute basics of Python.",
       color: "from-blue-500 to-cyan-400",
-      price: "₹2,999",
       syllabus: [
-        "Introduction to Programming concepts",
-        "Variables, Data Types, and Operators",
-        "Control Flow (If/Else, Loops)",
-        "Functions and Scope",
-        "Building a simple Calculator project"
+        "Introduction to computational thinking",
+        "Interactive block-based coding sessions",
+        "Basic concepts: Variables & Loops",
+        "Mini-project showcase",
+        "Certificate of participation"
       ]
     },
     {
-      title: "Web Creator Pro",
-      level: "Intermediate",
-      duration: "12 Weeks",
+      title: "Web Creator Workshop",
+      level: "High School",
+      duration: "3 Days",
       icon: <FiMonitor size={40} />,
-      desc: "Dive into HTML, CSS, and JS. Build responsive websites from scratch and deploy them live on the internet.",
+      desc: "Dive into HTML, CSS, and JS. We guide students to build their first responsive website from scratch and deploy it live.",
       color: "from-purple-500 to-pink-500",
-      price: "₹4,999",
       syllabus: [
-        "Semantic HTML5 & Accessibility",
-        "Modern CSS3 (Flexbox & Grid)",
-        "JavaScript DOM Manipulation",
-        "Responsive Web Design",
-        "Final Project: Portfolio Website"
+        "Semantic HTML5 fundamentals",
+        "Modern CSS3 (Flexbox & Grid) styling",
+        "Adding interactivity with JavaScript",
+        "Hosting and live deployment",
+        "Final Portfolio Website presentation"
       ]
     },
     {
-      title: "App Builder Basics",
+      title: "App Builder Hackathon",
       level: "Advanced",
-      duration: "10 Weeks",
+      duration: "1 Week",
       icon: <FiSmartphone size={40} />,
-      desc: "Step up your game by building simple, interactive mobile-friendly web apps using modern frameworks.",
+      desc: "An intensive program where students step up their game by building interactive web applications in a hackathon-style environment.",
       color: "from-orange-500 to-yellow-400",
-      price: "₹5,999",
       syllabus: [
-        "Introduction to React.js",
-        "State and Props",
-        "Building reusable components",
-        "Fetching data from APIs",
-        "Final Project: Weather App"
+        "Introduction to modern web frameworks",
+        "State management and component design",
+        "Working in teams and version control",
+        "Building and testing the application",
+        "Pitching the final product"
       ]
     }
   ];
@@ -65,7 +62,7 @@ const Courses = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-heading font-bold mb-4 text-[var(--text-color)]"
           >
-            Our <span className="text-[var(--color-brand-accent)]">Courses</span>
+            Our School <span className="text-[var(--color-brand-accent)]">Bootcamps</span>
           </motion.h2>
           <p className="text-[var(--text-muted)] font-body max-w-2xl mx-auto">
             Carefully curated curriculum designed specifically for middle and high school students.
@@ -111,7 +108,7 @@ const Courses = () => {
                   onClick={() => setSelectedCourse(course)}
                   className="w-full py-3 rounded-xl border border-[var(--border-color)] font-medium text-[var(--text-color)] hover:bg-[var(--color-brand-accent)] hover:text-white hover:border-transparent hover:shadow-lg transition-all duration-300"
                 >
-                  View Syllabus & Details
+                  View Bootcamp Details
                 </button>
               </div>
             </motion.div>
@@ -165,7 +162,7 @@ const Courses = () => {
                 </p>
 
                 <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-2xl p-6 mb-8">
-                  <h4 className="text-xl font-heading font-bold mb-4 text-[var(--text-color)]">What you will learn</h4>
+                  <h4 className="text-xl font-heading font-bold mb-4 text-[var(--text-color)]">Bootcamp Highlights</h4>
                   <ul className="space-y-3">
                     {selectedCourse.syllabus.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-[var(--text-color)]">
@@ -178,8 +175,8 @@ const Courses = () => {
 
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-6 border-t border-[var(--border-color)]">
                   <div>
-                    <p className="text-sm text-[var(--text-muted)] font-medium uppercase tracking-widest mb-1">Course Fee</p>
-                    <p className="text-4xl font-bold font-heading text-[var(--text-color)]">{selectedCourse.price}</p>
+                    <p className="text-sm text-[var(--text-muted)] font-medium uppercase tracking-widest mb-1">Interested?</p>
+                    <p className="text-2xl font-bold font-heading text-[var(--text-color)]">Bring us to your campus</p>
                   </div>
                   <button 
                     onClick={() => {
@@ -189,7 +186,7 @@ const Courses = () => {
                     }}
                     className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[var(--color-brand-accent)] text-white font-bold text-lg hover:opacity-90 shadow-xl shadow-[var(--color-brand-accent)]/30 glow-accent transition-all duration-300"
                   >
-                    Enroll Now
+                    Partner With Us
                   </button>
                 </div>
               </div>

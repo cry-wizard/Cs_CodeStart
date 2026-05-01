@@ -20,7 +20,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'Courses', href: '#courses' },
+    { name: 'Bootcamps', href: '#courses' },
     { name: 'Team', href: '#team' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -70,11 +70,11 @@ const Navbar = () => {
               {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
             </button>
             <a 
-              href="#courses"
-              onClick={(e) => scrollToSection(e, 'courses', 1500)}
+              href="#contact"
+              onClick={(e) => scrollToSection(e, 'contact', 1500)}
               className="px-5 py-2 rounded-full bg-[var(--color-brand-accent)] text-white font-medium hover:opacity-90 transition-colors shadow-lg shadow-[var(--color-brand-accent)]/30 glow-accent"
             >
-              Enroll Now
+              Partner With Us
             </a>
           </div>
         </nav>
@@ -122,14 +122,14 @@ const Navbar = () => {
               ))}
               <li>
                 <a 
-                  href="#courses"
+                  href="#contact"
                   onClick={(e) => {
                     setMobileMenuOpen(false);
-                    scrollToSection(e, 'courses', 1500);
+                    scrollToSection(e, 'contact', 1500);
                   }}
                   className="inline-block mt-2 px-6 py-3 w-full text-center rounded-xl bg-[var(--color-brand-accent)] text-white font-medium glow-accent"
                 >
-                  Enroll Now
+                  Partner With Us
                 </a>
               </li>
             </ul>
