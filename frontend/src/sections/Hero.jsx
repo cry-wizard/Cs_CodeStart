@@ -12,9 +12,9 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden perspective-1000">
       {/* Background Decorative Elements with Parallax */}
-      <motion.div style={{ y: y1, opacity }} className="absolute top-1/4 left-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-[128px] opacity-40 animate-blob"></motion.div>
-      <motion.div style={{ y: y2, opacity }} className="absolute top-1/3 right-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-[128px] opacity-40 animate-blob animation-delay-2000"></motion.div>
-      <motion.div style={{ y: y1, opacity }} className="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-[128px] opacity-40 animate-blob animation-delay-4000"></motion.div>
+      <motion.div style={{ y: y1, opacity }} className="absolute top-1/4 left-10 w-72 h-72 bg-rose-500 rounded-full mix-blend-multiply filter blur-[128px] opacity-40 animate-blob"></motion.div>
+      <motion.div style={{ y: y2, opacity }} className="absolute top-1/3 right-10 w-72 h-72 bg-orange-500 rounded-full mix-blend-multiply filter blur-[128px] opacity-40 animate-blob animation-delay-2000"></motion.div>
+      <motion.div style={{ y: y1, opacity }} className="absolute -bottom-8 left-1/2 w-72 h-72 bg-red-500 rounded-full mix-blend-multiply filter blur-[128px] opacity-40 animate-blob animation-delay-4000"></motion.div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -45,7 +45,7 @@ const Hero = () => {
                 whileTap={{ scale: 0.95 }}
                 href="#courses"
                 onClick={(e) => scrollToSection(e, 'courses', 1500)}
-                className="px-8 py-4 rounded-xl bg-[var(--color-brand-accent)] text-white font-semibold text-lg hover:bg-blue-700 transition-colors shadow-xl shadow-blue-500/30"
+                className="px-8 py-4 rounded-2xl bg-[var(--color-brand-accent)] text-white font-semibold text-lg hover:opacity-90 transition-colors shadow-xl shadow-[var(--color-brand-accent)]/30 glow-accent"
               >
                 Get Started
               </motion.a>
@@ -54,7 +54,7 @@ const Hero = () => {
                 whileTap={{ scale: 0.95 }}
                 href="#about"
                 onClick={(e) => scrollToSection(e, 'about', 1500)}
-                className="px-8 py-4 rounded-xl glass text-[var(--text-color)] font-semibold text-lg hover:bg-[var(--card-bg)] transition-colors flex items-center gap-2"
+                className="px-8 py-4 rounded-2xl glass text-[var(--text-color)] font-semibold text-lg hover:bg-[var(--card-bg)] transition-colors flex items-center gap-2 hover-glow"
               >
                 Learn More
               </motion.a>
@@ -80,9 +80,9 @@ const Hero = () => {
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-              className="relative z-10 w-64 h-64 glass rounded-[2rem] flex items-center justify-center border-2 border-[var(--color-brand-accent)]/30 shadow-[0_0_50px_rgba(37,99,235,0.3)]"
+              className="relative z-10 w-64 h-64 glass rounded-[2rem] flex items-center justify-center border-2 border-[var(--color-brand-accent)]/30 shadow-[0_0_50px_rgba(244,63,94,0.3)]"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-[2rem] filter blur-md"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-500/20 to-orange-600/20 rounded-[2rem] filter blur-md"></div>
               <div className="text-8xl text-[var(--color-brand-accent)] font-heading font-black drop-shadow-2xl">
                 &lt;/&gt;
               </div>

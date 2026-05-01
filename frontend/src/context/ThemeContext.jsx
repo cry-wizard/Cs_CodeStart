@@ -11,7 +11,7 @@ export const ThemeProvider = ({ children }) => {
       if (savedTheme) {
         return savedTheme === 'dark';
       }
-      return window.matchMedia('(prefers-color-scheme: dark)').matches;
+      return true; // Default to dark mode for Zuup aesthetic
     }
     return false;
   });

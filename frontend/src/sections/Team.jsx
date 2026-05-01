@@ -30,7 +30,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-24 bg-gray-50/50 dark:bg-gray-900/20">
+    <section id="team" className="py-24 relative">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <motion.h2

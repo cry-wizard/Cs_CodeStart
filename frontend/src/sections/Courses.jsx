@@ -56,7 +56,7 @@ const Courses = () => {
   ];
 
   return (
-    <section id="courses" className="py-24 bg-gray-50/50 dark:bg-gray-900/20 relative">
+    <section id="courses" className="py-24 relative">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <motion.h2 
@@ -187,7 +187,7 @@ const Courses = () => {
                       const contactSection = document.getElementById('contact');
                       if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
                     }}
-                    className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[var(--color-brand-accent)] text-white font-bold text-lg hover:bg-blue-700 shadow-xl shadow-blue-500/30 hover:-translate-y-1 transition-all duration-300"
+                    className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[var(--color-brand-accent)] text-white font-bold text-lg hover:opacity-90 shadow-xl shadow-[var(--color-brand-accent)]/30 glow-accent transition-all duration-300"
                   >
                     Enroll Now
                   </button>

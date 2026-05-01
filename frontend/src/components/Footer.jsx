@@ -3,7 +3,7 @@ import { scrollToSection } from '../utils/scroll';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 border-t border-gray-800 text-gray-300 py-12">
+    <footer className="bg-[var(--bg-color)] border-t border-[var(--border-color)] text-gray-300 py-12">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-2">
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+        <div className="border-t border-[var(--border-color)] pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>&copy; {new Date().getFullYear()} CS Code Start. All rights reserved.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

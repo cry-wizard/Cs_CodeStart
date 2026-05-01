@@ -70,7 +70,7 @@ const Contact = () => {
             
             {/* Left Side: Info */}
             <div className="md:col-span-2 bg-gray-900 text-white p-10 flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-screen filter blur-[80px] opacity-30 transform translate-x-1/2 -translate-y-1/2"></div>
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-brand-accent)] rounded-full mix-blend-screen filter blur-[80px] opacity-30 transform translate-x-1/2 -translate-y-1/2"></div>
               
               <div className="relative z-10">
                 <h3 className="text-3xl font-heading font-bold mb-4">Get in Touch</h3>
@@ -130,7 +130,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full bg-[var(--bg-color)] border border-[var(--border-color)] text-[var(--text-color)] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-accent)] transition-shadow"
+                      className="w-full bg-[var(--bg-color)] border border-[var(--border-color)] text-[var(--text-color)] rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-accent)] transition-shadow"
                       placeholder="John Doe"
                     />
                   </div>
@@ -143,7 +143,7 @@ const Contact = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full bg-[var(--bg-color)] border border-[var(--border-color)] text-[var(--text-color)] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-accent)] transition-shadow"
+                      className="w-full bg-[var(--bg-color)] border border-[var(--border-color)] text-[var(--text-color)] rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-accent)] transition-shadow"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -156,7 +156,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows="4"
-                      className="w-full bg-[var(--bg-color)] border border-[var(--border-color)] text-[var(--text-color)] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-accent)] transition-shadow resize-none"
+                      className="w-full bg-[var(--bg-color)] border border-[var(--border-color)] text-[var(--text-color)] rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-accent)] transition-shadow resize-none"
                       placeholder="How can we help you?"
                     ></textarea>
                   </div>
@@ -164,7 +164,7 @@ const Contact = () => {
                   <button 
                     type="submit"
                     disabled={status === 'loading'}
-                    className={`mt-2 flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold text-white transition-all duration-300 ${status === 'loading' ? 'bg-[var(--color-brand-accent)] opacity-70 cursor-not-allowed' : 'bg-[var(--color-brand-accent)] hover:bg-blue-700 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-1'}`}
+                    className={`mt-2 flex items-center justify-center gap-2 w-full py-4 rounded-2xl font-bold text-white transition-all duration-300 ${status === 'loading' ? 'bg-[var(--color-brand-accent)] opacity-70 cursor-not-allowed' : 'bg-[var(--color-brand-accent)] hover:opacity-90 shadow-lg shadow-[var(--color-brand-accent)]/30 hover:shadow-[var(--color-brand-accent)]/50 hover:-translate-y-1 glow-accent'}`}
                   >
                     {status === 'loading' ? (
                       <span className="animate-pulse">Sending...</span>

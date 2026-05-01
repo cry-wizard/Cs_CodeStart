@@ -39,7 +39,7 @@ const About = () => {
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
               className="absolute top-0 right-0 w-[80%] h-[300px] z-10"
             >
-              <div className="absolute inset-0 bg-gradient-to-tr from-[var(--color-brand-accent)] to-purple-500 rounded-3xl transform rotate-2 opacity-30 blur-lg"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-[var(--color-brand-accent)] to-orange-500 rounded-3xl transform rotate-2 opacity-30 blur-lg"></div>
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"
                 alt="Students learning"
@@ -66,7 +66,7 @@ const About = () => {
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
               transition={{ type: "spring", delay: 0.6 }}
-              className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 z-30 glass px-6 py-4 rounded-2xl flex items-center gap-4 border border-[var(--color-brand-accent)]/30 shadow-[0_0_30px_rgba(37,99,235,0.2)]"
+              className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 z-30 glass px-6 py-4 rounded-2xl flex items-center gap-4 border border-[var(--color-brand-accent)]/30 shadow-[0_0_30px_rgba(244,63,94,0.2)]"
             >
               <div className="w-12 h-12 bg-green-500/20 text-green-500 rounded-full flex items-center justify-center text-xl font-bold">
                 ✓
@@ -105,7 +105,7 @@ const About = () => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="glass p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300"
             >
-              <div className="w-16 h-16 rounded-2xl bg-blue-500/10 text-[var(--color-brand-accent)] flex items-center justify-center mb-6">
+              <div className="w-16 h-16 rounded-2xl bg-[var(--color-brand-accent)]/10 text-[var(--color-brand-accent)] flex items-center justify-center mb-6">
                 {feature.icon}
               </div>
               <h3 className="text-2xl font-bold font-heading mb-4 text-[var(--text-color)]">{feature.title}</h3>

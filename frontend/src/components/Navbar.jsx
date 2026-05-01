@@ -72,7 +72,7 @@ const Navbar = () => {
             <a 
               href="#courses"
               onClick={(e) => scrollToSection(e, 'courses', 1500)}
-              className="px-5 py-2 rounded-full bg-[var(--color-brand-accent)] text-white font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30"
+              className="px-5 py-2 rounded-full bg-[var(--color-brand-accent)] text-white font-medium hover:opacity-90 transition-colors shadow-lg shadow-[var(--color-brand-accent)]/30 glow-accent"
             >
               Enroll Now
             </a>
@@ -127,7 +127,7 @@ const Navbar = () => {
                     setMobileMenuOpen(false);
                     scrollToSection(e, 'courses', 1500);
                   }}
-                  className="inline-block mt-2 px-6 py-3 w-full text-center rounded-lg bg-[var(--color-brand-accent)] text-white font-medium"
+                  className="inline-block mt-2 px-6 py-3 w-full text-center rounded-xl bg-[var(--color-brand-accent)] text-white font-medium glow-accent"
                 >
                   Enroll Now
                 </a>

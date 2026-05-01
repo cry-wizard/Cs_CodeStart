@@ -3,13 +3,13 @@
 @theme {
   --color-brand-primary: #000000;
   --color-brand-secondary: #FFFFFF;
-  --color-brand-accent: #2563EB;
-  --color-brand-bg-light: #F8FAFC;
-  --color-brand-bg-dark: #0F172A;
-  --color-brand-card-light: rgba(255, 255, 255, 0.7);
-  --color-brand-card-dark: rgba(30, 41, 59, 0.7);
-  --color-brand-text-light: #334155;
-  --color-brand-text-dark: #E2E8F0;
+  --color-brand-accent: #f43f5e;
+  --color-brand-bg-light: #FAFAFA;
+  --color-brand-bg-dark: #050505;
+  --color-brand-card-light: rgba(255, 255, 255, 0.8);
+  --color-brand-card-dark: rgba(23, 23, 23, 0.6);
+  --color-brand-text-light: #171717;
+  --color-brand-text-dark: #F8FAFC;
   
   --font-heading: 'Inter', sans-serif;
   --font-body: 'Open Sans', sans-serif;
@@ -47,18 +47,29 @@
 @layer utilities {
   .glass {
     background: var(--card-bg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border: 1px solid var(--border-color);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 1.5rem;
   }
   
   .dark .glass {
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
   }
   
+  .glow-accent {
+    box-shadow: 0 10px 25px -5px rgba(244, 63, 94, 0.4);
+    transition: all 0.3s ease;
+  }
+  .glow-accent:hover {
+    box-shadow: 0 15px 35px -5px rgba(244, 63, 94, 0.6);
+    transform: translateY(-2px);
+  }
+
   .text-gradient {
-    background: linear-gradient(90deg, var(--color-brand-accent), #60A5FA, var(--color-brand-accent));
+    background: linear-gradient(90deg, var(--color-brand-accent), #fb7185, var(--color-brand-accent));
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -70,12 +81,13 @@
     transition: all 0.3s ease;
   }
   .hover-glow:hover {
-    box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
+    box-shadow: 0 0 20px rgba(244, 63, 94, 0.5);
     transform: translateY(-2px);
   }
 
   .card-hover {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 1.5rem;
   }
   .card-hover:hover {
     transform: translateY(-10px) scale(1.02);
@@ -83,7 +95,7 @@
     border-color: var(--color-brand-accent);
   }
   .dark .card-hover:hover {
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
   }
 
   /* Animations */
